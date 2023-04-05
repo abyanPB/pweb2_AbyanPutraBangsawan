@@ -14,11 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('login', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama');
-            $table->string('username');
+            $table->bigIncrements('id');
+            $table->string('email')->require()->unique();
             $table->string('password');
-            $table->enum('level', array('admin','karyawan','spv'));
+            $table->enum('level', ['Koordinator','Karyawan','Supervisor']);
         });
     }
 

@@ -13,10 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('kebersihan-ruangan', function (Blueprint $table) {
-            $table->id();
-            $table->string('Nama Ruangan');
-            $table->enum('level', array('Bersih', 'Kotor', 'Sedang dikerjakan'));
+        Schema::create('karyawan', function (Blueprint $table) {
+            $table->bigIncrements('id_karyawan');
+            $table->string('nama_petugas')->require();
+            $table->string('jenis_kelamin');
+            $table->string('jabatan');
+            $table->string('alamat');
+            $table->string('no_hp');
+            $table->string('email');
         });
     }
 
@@ -27,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('karyawan');
     }
 };
