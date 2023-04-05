@@ -74,13 +74,18 @@
                     
                     @elseif(Auth::user()->level=='Supervisor')
                     <a href="/dashboard" class="nav-item nav-link"><i class="fa fa-home me-2"></i>Dashboard</a>
-                   
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-bars me-2"></i>MENU</a>
+                        <div class="dropdown-menu bg-transparent border-0" style="margin-left:35px">
+                            <a href="#" class="dropdown-item"><i class="fa fa-print me-3"></i>Laporan</a>
+                        </div>
+                    </div>
 
                     @elseif(Auth::user()->level=='Karyawan')
                     <a href="/dashboard" class="nav-item nav-link"><i class="fa fa-home me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-bars me-2"></i>MENU</a>
-                        <div class="dropdown-menu bg-transparent border-0">
+                        <div class="dropdown-menu bg-transparent border-0" style="margin-left:35px">
                             <a href="/kebersihan" class="dropdown-item"><i class="fa fa-trash me-3"></i>KEBERSIHAN</a>
                         </div>
                     </div>
