@@ -42,7 +42,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/karyawan', [karyawanController::class, 'store']);
     Route::get('/karyawan-edit/{id_karyawan}', [karyawanController::class, 'edit']);
     Route::put('/karyawan/{id_karyawan}', [karyawanController::class, 'update']);
-    Route::get('/karyawan/{id_karyawan}', [karyawanController::class, 'destroy']);
+    Route::delete('/karyawan/{id_karyawan}', [karyawanController::class, 'destroy']);
 });
 
 

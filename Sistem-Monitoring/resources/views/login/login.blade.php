@@ -72,6 +72,12 @@
                             </div>
                             <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Log In</button>
                         </form>
+
+                        <div style="text-align:center">
+                            <span>PT. PROVICE GROUP</span>
+                            <br>
+                            <span>POLITEKNIK NEGERI CILACAP</span>
+                        </div>
                     </div>
                 </div>
             </div>

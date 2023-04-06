@@ -37,13 +37,19 @@
                         <td>{{ $data->email }}</td>
                         <td>
                             @if(Auth::user()->level=='Koordinator')
+                            <div class="d-flex">
                                 <button onclick="window.location.href='karyawan-edit/{{ $data->id_karyawan }}'" type="button" class="btn btn-info btn-sm mx-1">
                                     <i class="fa fa-pen" style="color:black"></i>
                                 </button>
-
-                                <button onclick="window.location.href='karyawan/{{ $data->id_karyawan }}'" type="button" class="btn btn-danger btn-sm">
-                                    <i class="fa fa-trash" style="color:black" onclick="confirm(Apakah Anda Ingin Menghapus Data)"></i>
-                                </button>
+                                
+                                <form action="karyawan/{{ $data->id_karyawan }}" method="post" onsubmit="return confirm('Apakah Anda Ingin Menghapus Data ?')">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" name="submit" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-trash" style="color:black"></i>
+                                    </button>
+                                </form>
+                            </div>
                                 
                             @elseif(Auth::user()->level=='Karyawan')
                                 <button onclick="window.location.href='karyawan-edit/{{ $data->id_karyawan }}'" type="button" class="btn btn-info btn-sm mx-1">
