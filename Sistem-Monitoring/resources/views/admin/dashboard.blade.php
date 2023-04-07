@@ -47,7 +47,7 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
-                                        <td>Ruang Kelas</td>
+                                        <td>Ruang Belajar</td>
                                         <td>Talitha</td>
                                         <td>13:00</td>
                                         <td>17:00</td>
