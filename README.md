@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fprovices.co.id%2Fimages%2F%3FSA&psig=AOvVaw3KTSKHLim2hgZxhCOdoGSD&ust=1680934955342000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCICjheqQl_4CFQAAAAAdAAAAABAE" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://provices.co.id/images/logoproviceskecilxxxx.png" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
